@@ -9,6 +9,7 @@ module HighOrderFunctions =
   let printNames names =
     names
     |> apply (printfn "Hello %s")
+    
 
   let printSquareOfNumbers numbers = 
     numbers
