@@ -17,6 +17,16 @@ module App =
 
     multiplyListFor 5
 
+    printfn "%i" (HighOrderFunctions.sumWith5 3)
+
+    let sumWith2 = HighOrderFunctions.sum 2
+
+    printfn "%i" (sumWith2 4)
+
+    let bmi = HighOrderFunctions.bmi
+
+    printfn "IMC = %f" (bmi 163 80)
+
     Console.ReadKey() |> ignore
 
     0 // return an integer exit code
