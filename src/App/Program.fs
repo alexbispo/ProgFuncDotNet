@@ -1,6 +1,7 @@
 ﻿namespace ProgFuncDotNet
 
 module App =
+  open System
 
   [<EntryPoint>]
   let main argv =
@@ -15,6 +16,9 @@ module App =
     multiplyListFor 4
 
     multiplyListFor 5
+
+    Console.ReadKey() |> ignore
+
     0 // return an integer exit code
   
   
